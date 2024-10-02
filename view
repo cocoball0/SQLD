@@ -1,0 +1,36 @@
+-- 장점
+데이터 접근 제어 가능
+복잡한 쿼리 단순화
+쿼리 재사용성 향상
+-- 단점
+한 번 정의된 뷰는 변경 불가
+데이터 조작에 제한 있음
+독립적인 인덱스 불가
+-- 주요 명령어
+CREATE VIEW 뷰이름 AS SELECT 문장;
+ALTER VIEW 뷰이름 AS SELECT 문장;
+DROP VIEW 뷰이름;
+SELECT * FROM 뷰이름 WHERE 조건;
+데이터 복사
+INSERT INTO 테이블1 SELECT * FROM 테이블2;
+트랜잭션 관리
+START TRANSACTION;
+-- SQL 문장들
+COMMIT;
+-- 또는
+ROLLBACK;
+저장 프로시저
+DELIMITER //
+CREATE PROCEDURE 프로시저명(IN 파라미터1 데이터타입, OUT 파라미터2 데이터타입)
+BEGIN
+-- SQL 문장들
+END //
+DELIMITER ;
+CALL 프로시저명(파라미터1, @파라미터2);
+사용자 정의 함수
+CREATE FUNCTION 함수명(파라미터 데이터타입) RETURNS 반환타입
+BEGIN
+-- 함수 내용
+RETURN 결과;
+END;
+SELECT 함수명(파라미터) FROM 테이블;
