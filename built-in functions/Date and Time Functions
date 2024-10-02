@@ -1,0 +1,28 @@
+NOW(): 현재 날짜와 시간을 'YYYY-MM-DD HH:MM:SS' 형식으로 반환
+예시 : SELECT NOW(); -- 결과: 현재 날짜와 시간 (예: '2024-03-10 15:30:00')
+
+DATE(): 전달받은 값에 해당하는 날짜 정보 반환
+예시 : SELECT DATE('2024-03-10 15:30:00'); -- 결과: '2024-03-10'
+
+MONTH(), DAY(), HOUR(), MINUTE(), SECOND(): 각 시간 단위에 해당하는 값 반환
+예시 : SELECT MONTH('2024-03-10'), DAY('2024-03-10'), HOUR('15:30:00'), MINUTE('15:30:00'), SECOND('15:30:00');
+-- 결과: 3, 10, 15, 30, 0
+
+MONTHNAME(): 월에 해당하는 이름 반환
+예시 : SELECT MONTHNAME('2024-03-10'); -- 결과: 'March'
+
+DAYNAME(): 요일에 해당하는 이름 반환
+예시 : SELECT DAYNAME('2024-03-10'); -- 결과: 'Sunday'
+
+DAYOFWEEK(): 해당 주에서 몇 번째 날인지 반환
+예시 : SELECT DAYOFWEEK('2024-03-10'); -- 결과: 1 (일요일)
+
+DAYOFMONTH(): 해당 월에서 몇 번째 날인지 반환
+예시 : SELECT DAYOFMONTH('2024-03-10'); -- 결과: 10
+
+DAYOFYEAR(): 해당 연도에서 몇 번째 날인지 반환
+예시 : SELECT DAYOFYEAR('2024-03-10'); -- 결과: 70
+
+DATE_FORMAT(): 지정된 형식에 맞춰 날짜와 시간 정보를 문자열로 반환
+예시 : SELECT DATE_FORMAT('2024-03-10 15:30:00', '%Y년 %m월 %d일 %H시 %i분 %s초');
+-- 결과: '2024년 03월 10일 15시 30분 00초'
