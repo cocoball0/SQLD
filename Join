@@ -1,0 +1,8 @@
+-- 내부 조인
+SELECT * FROM 테이블1 INNER JOIN 테이블2 ON 테이블1.열 = 테이블2.열;
+
+-- 왼쪽 외부 조인
+SELECT * FROM 테이블1 LEFT JOIN 테이블2 ON 테이블1.열 = 테이블2.열;
+
+-- 오른쪽 외부 조인
+SELECT * FROM 테이블1 RIGHT JOIN 테이블2 ON 테이블1.열 = 테이블2.열;
