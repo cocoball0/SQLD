@@ -1,0 +1,29 @@
+FLOOR(): 내림
+예시 : SELECT FLOOR(4.7); -- 결과: 4
+
+CEIL(): 올림
+예시 : SELECT CEIL(4.3); -- 결과: 5
+
+ROUND(): 반올림
+예시 : SELECT ROUND(4.5); -- 결과: 5
+
+SQRT(): 양의 제곱근
+예시 : SELECT SQRT(16); -- 결과: 4
+
+POW(): 거듭제곱 계산 (첫 번째 인수: 밑수, 두 번째 인수: 지수)
+예시 : SELECT POW(2, 3); -- 결과: 8
+
+EXP(): e의 거듭제곱 계산
+예시 : SELECT EXP(1); -- 결과: 약 2.718281828459045
+
+LOG(): 자연로그 값 계산
+예시 : SELECT LOG(2.718281828459045); -- 결과: 1
+
+SIN(), COS(), TAN(): 삼각함수 값 반환
+예시 : SELECT SIN(PI()/2), COS(0), TAN(PI()/4);
+
+ABS(): 절대값
+예시 : SELECT ABS(-5); -- 결과: 5
+ 
+RAND(): 0.0 이상 1.0 미만의 무작위 실수 생성
+예시 : SELECT RAND(); -- 결과: 0과 1 사이의 무작위 값
