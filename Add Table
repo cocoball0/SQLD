@@ -1,0 +1,11 @@
+-- 새로운 열 추가
+ALTER TABLE 테이블명 ADD 열이름 데이터타입;
+예시 : ALTER TABLE 테이블명 ADD COLUMN 새열이름 INT;
+
+-- 기존 열의 정의 변경
+ALTER TABLE 테이블명 MODIFY 열이름 새로운데이터타입;
+예시 : ALTER TABLE 테이블명 MODIFY COLUMN 열이름 VARCHAR(50);
+
+-- 기존 열 삭제
+ALTER TABLE 테이블명 DROP COLUMN 열이름;
+예시 : ALTER TABLE 테이블명 DROP COLUMN 열이름;
